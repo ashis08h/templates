@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.min.css"
+    integrity="sha512-W9OWS8dgpQBw5Hb+tbMto1BMsHvYOXT/AFBGvASCPUJleaEdpOAN5lzgj9RrTbo3YrlR+m9xdOBccp8F+SFyQg=="
+    crossorigin="anonymous" /> -->
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+  <!-- <link rel="stylesheet" href="./src/css/style.min.css"> -->
+  <link rel="stylesheet" href="style.css">
+
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <meta name="msapplication-TileColor" content="#226799">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#226799">
+  <title>edulytX</title>
+</head>
+
+<body>
+  <!-- <ul id="myMenu">
+
+    <li data-menuanchor="firstPage" class="active">
+      <a href="#firstPage"> <span class="menu-bullet"></span>
+        <span>First section</span></a>
+    </li>
+
+    <li data-menuanchor="secondPage">
+      <a href="#secondPage"><span class="menu-bullet"></span> <span>Second section </span> </a>
+    </li>
+
+    <li data-menuanchor="thirdPage">
+      <a href="#thirdPage"><span class="menu-bullet"></span> <span>Third section </span></a>
+    </li>
+
+    <li data-menuanchor="fourthPage">
+      <a href="#fourthPage"><span class="menu-bullet"></span> <span>Fourth section</span></a>
+    </li>
+  </ul> -->
+
+
+  <!-- <div class="next-screen next-screen-dark">
+    <svg width="80" height="89" viewBox="0 0 80 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_d)">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M40 80C62.0914 80 80 62.0914 80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80ZM40 47.2159L25.465 33L21 37.3765L40 56L59 37.3765L54.535 33L40 47.2159Z"
+          fill="white" />
+      </g>
+      <defs>
+        <filter id="filter0_d" x="0" y="0" width="80" height="89" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+          <feOffset dy="9" />
+          <feColorMatrix type="matrix" values="0 0 0 0 0.133333 0 0 0 0 0.403922 0 0 0 0 0.6 0 0 0 0.46 0" />
+          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
+          <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
+        </filter>
+      </defs>
+    </svg>
+  </div> -->
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light shadow">
+    <div class="container-fluid">
+      <div class="navbar-brand" href="#">
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Explore</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item">Science</a>
+              <a class="dropdown-item">Art and Culture</a>
+              <a class="dropdown-item">Computer Science</a>
+              <a class="dropdown-item">Design</a>
+              <a class="dropdown-item">History</a>
+              <a class="dropdown-item">Literature</a>
+              <a class="dropdown-item">Philosoph</a>
+              <a class="dropdown-item">Mathematics</a>
+              <a class="dropdown-item">Medicine</a>
+              <a class="dropdown-item">Ethics</a>
+              <a class="dropdown-item">Law</a>
+              <a class="dropdown-item">Economics</a>
+              <a class="dropdown-item">Engineering</a>
+              <a class="dropdown-item">Data Science</a>
+              <a class="dropdown-item">Analytics</a>
+              <a class="dropdown-item">Humanities</a>
+              <a class="dropdown-item">Biology</a>
+              <a class="dropdown-item">Chemistry</a>
+              <a class="dropdown-item">IT</a>
+              <a class="dropdown-item">Music</a>
+              <a class="dropdown-item">Business</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Partners</a>
+          </li>
+        </ul>
+        <span>
+          <button class="btn btn-secondary"> Join Now</button>
+          <button class="btn btn-primary px-3 ml-3">Sign In</button>
+        </span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="modal fade" id="videoModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body embed-responsive embed-responsive-16by9">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LXb3EKWsInQ" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>>
+
+  <div class="section">
+    <div data-parallax="scroll" data-image-src="images/BackgroundImage-2-large.jpg">
+      <div class="screen" id="screen-title">
+        <div class="subscreen">
+          <div class="container">
+            <div class="row">
+              <p class="course-title col-12 col-md-7">Demo Course With Advanced Elements</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="course-header-end-mobile d-md-none">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-md-4" id="course-header-author">
+
+            </div>
+            <div class="col-12 col-md-4" id="course-header-buttons">
+              <div class="header-button flex-grow-1 mr-1">
+                <button class="button btn btn-secondary w-100" disabled>
+                  Already Enrolled
+                </button>
+
+              </div>
+              <div class="header-button flex-grow-1 ml-1">
+                <button class="btn btn-primary w-100">
+                  View Course
+                </button>
+
+              </div>
+            </div>
+            <div class="col-12 col-md-4" id="course-header-rating">
+              <div data-rating-value="3.6" class="course-rating"></div>
+            </div>
+            <ul class="course-share m-3 w-100">
+              <li id="mail"></li>
+              <li id="twitter"></li>
+              <li id="whatsapp"></li>
+              <li id="linkedin"></li>
+              <li id="copy"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="screen" id="screen-course-body">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 col-md-7 mb-5 mb-md-0" id="course-info">
+            <div class="card card-body">
+              <a type="button" data-toggle="modal" class="d-md-none" data-target="#videoModal">
+                <div class="video-wrapper">
+                  <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                    <g>
+                      <g>
+                        <path d="M437.019,74.98C388.667,26.628,324.38,0,256,0C187.619,0,123.332,26.629,74.98,74.98C26.629,123.332,0,187.62,0,256
+          c0,68.381,26.629,132.668,74.98,181.02C123.332,485.371,187.619,512,256,512c68.38,0,132.667-26.629,181.019-74.98
+          C485.371,388.667,512,324.38,512,256S485.371,123.333,437.019,74.98z M400.887,268.482L208.086,397.014
+          c-2.51,1.674-5.411,2.52-8.321,2.52c-2.427,0-4.859-0.588-7.077-1.775c-4.877-2.609-7.922-7.693-7.922-13.225V127.467
+          c0-5.532,3.045-10.615,7.922-13.225c4.876-2.61,10.795-2.325,15.398,0.745L400.887,243.52c4.173,2.782,6.68,7.466,6.68,12.481
+          C407.566,261.017,405.06,265.699,400.887,268.482z" />
+                      </g>
+                    </g>
+
+                  </svg>
+                  <img src="images/garden.jpg" alt="">
+                </div>
+              </a>
+              <h4 class="section-header">About the Course</h4>
+
+              <p>This course is a demonstration course created for showcasing different types of learning material
+                supported by edulytX. The course demonstrates the following:
+              <ul>
+                <li>Videos, Podcasts and Articles or Blogs</li>
+                <li>Interactive Content</li>
+                <li>In Video Quiz</li>
+                <li>Online Classes</li>
+                <li>Blended Learning or VILT - Virtual Instructor Lead Training</li>
+                <li>LTI - Learner Tools Integration</li>
+                <li>PDFs, TextBooks , Wiki</li>
+                <li>Advanced Problems</li>
+              </ul>
+              </p>
+              <p>
+                Requirements
+              <ul>
+                <li>A Decent Interent Connection</li>
+                <li>and an alert Mind</li>
+              </ul>
+              </p>
+              <p>
+                Frequently Asked Questions
+              <ul>
+                <li>
+                  What browser should I use ?
+                  Any Modern day browser including but not limited to Chrome, Safari, Internet Explorer and Microsoft
+                  Edge.
+                </li>
+                <li>
+                  Is Enrollment to course mandatory ?
+                  The course has been created for demonstrating some of the features of edulytX. Enrollment is not
+                  compulsory.
+                </li>
+              </ul>
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-5" id="course-stats">
+            <div class="card card-body">
+              <div class="d-none d-md-block">
+                <a type="button" data-toggle="modal" data-target="#videoModal" class="d-block">
+                  <div class="video-wrapper">
+                    <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                      style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path d="M437.019,74.98C388.667,26.628,324.38,0,256,0C187.619,0,123.332,26.629,74.98,74.98C26.629,123.332,0,187.62,0,256
+          c0,68.381,26.629,132.668,74.98,181.02C123.332,485.371,187.619,512,256,512c68.38,0,132.667-26.629,181.019-74.98
+          C485.371,388.667,512,324.38,512,256S485.371,123.333,437.019,74.98z M400.887,268.482L208.086,397.014
+          c-2.51,1.674-5.411,2.52-8.321,2.52c-2.427,0-4.859-0.588-7.077-1.775c-4.877-2.609-7.922-7.693-7.922-13.225V127.467
+          c0-5.532,3.045-10.615,7.922-13.225c4.876-2.61,10.795-2.325,15.398,0.745L400.887,243.52c4.173,2.782,6.68,7.466,6.68,12.481
+          C407.566,261.017,405.06,265.699,400.887,268.482z" />
+                        </g>
+                      </g>
+
+                    </svg>
+                    <img src="images/garden.jpg" alt="">
+                  </div>
+                </a>
+                <div class="course-header-end">
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col" id="course-header-author">
+                      </div>
+                      <div class="col" id="course-header-rating">
+                        <div data-rating-value="4.5" class="course-rating"></div>
+                      </div>
+                      <div class="col-12" id="course-header-buttons">
+                        <div class="header-button flex-grow-1 mr-1">
+                          <button class="button btn btn-secondary w-100" disabled>
+                            Already Enrolled
+                          </button>
+
+                        </div>
+                        <div class="header-button flex-grow-1 ml-1">
+                          <button class="btn btn-primary w-100">
+                            View Course
+                          </button>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="course-share m-2 my-5 d-none d-md-flex">
+                <li id="mail"></li>
+                <li id="twitter"></li>
+                <li id="whatsapp"></li>
+                <li id="linkedin"></li>
+                <li id="copy"></li>
+              </ul>
+
+              <ul class="course-stats-list">
+                <li>
+                  <span class="label">
+                    <span class="icon" id="enrollment"></span>
+                    Enrollments
+                  </span>
+                  <span class="value">2139 </span>
+                </li>
+                <li>
+                  <span class="label">
+                    <span class="icon" id="calendar"></span>
+                    Course Start Date
+                  </span>
+                  <span class="value">21st Jan, 2020 </span>
+                </li>
+                <li>
+                  <span class="label">
+                    <span class="icon" id="calendar"></span>
+                    Course End Date
+                  </span>
+                  <span class="value">21st Feb, 2020 </span>
+                </li>
+                <li>
+                  <span class="label">
+                    <span class="icon" id="calendar"></span>
+                    Enrolment Start Date
+                  </span>
+                  <span class="value"> 1st Jan, 2020 </span>
+                </li>
+                <li>
+                  <span class="label">
+                    <span class="icon" id="calendar"></span>
+                    Enrolment End Date
+                  </span>
+                  <span class="value"> 17th Jan, 2020 </span>
+                </li>
+                <li>
+                  <span class="label">
+                    <span class="icon" id="effort"></span>
+                    Effort
+                  </span>
+                  <span class="value"> 12hr/week </span>
+                </li>
+                <li>
+                  <span class="label">
+                    <span class="icon" id="category"></span>
+                    Category
+                  </span>
+                  <span class="value">Science(Graduate) </span>
+                </li>
+                <li>
+                  <span class="label">
+                    <span class="icon" id="duration"></span>
+                    Duration
+                  </span>
+                  <span class="value">2 months </span>
+                </li>
+                <li>
+                  <span class="label">
+                    <span class="icon" id="language"></span>
+                    Language
+                  </span>
+                  <span class="value">English, Hindi </span>
+                </li>
+                <li>
+                  <span class="label">
+                    <span class="icon" id="transcript"></span>
+                    Video Transcript(s)
+                  </span>
+                  <span class="value"> Telugu, Tamil, Marathi, Malayalam, Bengali, Nepali, French, Klingon </span>
+                </li>
+                <li>
+                  <span class="label">
+                    <span class="icon" id="price"></span>
+                    Price
+                  </span>
+                  <span class="value"> ₹500 </span>
+                </li>
+                <li>
+                  <span class="label">
+                    <span class="icon" id="level"></span>
+                    Level
+                  </span>
+                  <span class="value"> Advanced </span>
+                </li>
+                <li>
+                  <span class="label">
+                    <span class="icon" id="certificate"></span>
+                    Shareable Certificate
+                  </span>
+                  <span class="value"> Yes </span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="container">
+      <div class="screen" id="screen-ratings">
+        <div class="header">
+          <h4 class="section-header">Ratings <span id="number-of-ratings">(234)</span></h4>
+          <div class="average-rating">
+            <div data-rating-value="4.5" class="course-rating">
+            </div>
+            (avg)
+          </div>
+        </div>
+        <form action="" class="submit-rating mt-3">
+          <div class="form-group">
+            <label for="review">Write a review</label>
+            <textarea class="form-control" id="review" rows="3"></textarea>
+            <div class="row">
+              <div class="col-8">
+                <input type="number" name="My Rating System" id="Demo" class="rating" data-clearable="remove" />
+              </div>
+              <div class="col-4 p-2 pr-3">
+                <button class="btn btn-primary w-100">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+        <div class="user-reviews">
+          <div class="user-review card my-3">
+            <div class="d-flex card-body">
+              <div class="flex-shrink-1 pr-5 d-flex align-items-center">
+                <div class="avatar">
+
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <div class="top-row">
+                  <div class="user-name">Ramesh Ranjan</div>
+                  <div class="review-rating course-rating" data-rating-value="3.7"></div>
+                </div>
+                <div class="review-text pt-2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis molestias ut blanditiis
+                    maiores autem odio aliquam ducimus cumque quasi itaque quidem numquam deserunt, possimus minima,
+                    reiciendis, quibusdam perspiciatis placeat!
+                  <p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="user-review card my-3">
+            <div class="d-flex card-body">
+              <div class="flex-shrink-1 pr-5 d-flex align-items-center">
+                <div class="avatar">
+
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <div class="top-row">
+                  <div class="user-name">Ramesh Ranjan</div>
+                  <div class="review-rating course-rating" data-rating-value="3.6"></div>
+                </div>
+                <div class="review-text pt-2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis molestias ut blanditiis
+                    maiores autem odio aliquam ducimus cumque quasi itaque quidem numquam deserunt, possimus minima,
+                    reiciendis, quibusdam perspiciatis placeat!
+                  <p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-review card my-3">
+            <div class="d-flex card-body">
+              <div class="flex-shrink-1 pr-5 d-flex align-items-center">
+                <div class="avatar">
+
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <div class="top-row">
+                  <div class="user-name">Ramesh Ranjan</div>
+                  <div class="review-rating course-rating" data-rating-value="2.5"></div>
+                </div>
+                <div class="review-text pt-2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis molestias ut blanditiis
+                    maiores autem odio aliquam ducimus cumque quasi itaque quidem numquam deserunt, possimus minima,
+                    reiciendis, quibusdam perspiciatis placeat!
+                  <p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-review card my-3">
+            <div class="d-flex card-body">
+              <div class="flex-shrink-1 pr-5 d-flex align-items-center">
+                <div class="avatar">
+
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <div class="top-row">
+                  <div class="user-name">Ramesh Ranjan</div>
+                  <div class="review-rating course-rating" data-rating-value="3.5"></div>
+                </div>
+                <div class="review-text pt-2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis molestias ut blanditiis
+                    maiores autem odio aliquam ducimus cumque quasi itaque quidem numquam deserunt, possimus minima,
+                    reiciendis, quibusdam perspiciatis placeat!
+                  <p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user-review card my-3">
+            <div class="d-flex card-body">
+              <div class="flex-shrink-1 pr-5 d-flex align-items-center">
+                <div class="avatar">
+
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <div class="top-row">
+                  <div class="user-name">Ramesh Ranjan</div>
+                  <div class="review-rating course-rating" data-rating-value="4.5"></div>
+                </div>
+                <div class="review-text pt-2">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis molestias ut blanditiis
+                    maiores autem odio aliquam ducimus cumque quasi itaque quidem numquam deserunt, possimus minima,
+                    reiciendis, quibusdam perspiciatis placeat!
+                  <p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section pp-scrollable">
+
+    <div class="screen" id="screen-footer">
+
+      <div class="subscreen pr-md-5 py-5" id="subscreen-footer-1">
+        <div class="container pr-md-5 row pb-md-3 pb-5 mb-lg-5 align-items-center">
+          <div id="logo" class="col-4 pb-5">
+            <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g id="Regular - Colourful (coloured text) - No Background">
+                <g id="g10">
+                  <g id="g14">
+                    <g id="g16">
+                      <g id="Text">
+                        <g id="Other Letters">
+                          <g id="e">
+                            <path id="path24"
+                              d="M75.3889 340.369H101.458C100.888 335.628 96.2445 330.414 89.1346 330.414C80.9812 330.414 75.9568 335.06 75.3889 340.369ZM60.8851 345.108C60.8851 323.684 79.4649 317.997 89.2297 317.997C102.596 317.997 115.962 327.097 116.436 343.875C116.436 347.858 116.152 350.417 116.152 350.417H75.0098C76.7163 358.948 86.3846 359.895 89.2297 359.895C97.0977 359.895 100.984 355.632 102.596 353.829L113.592 360.181C111.506 363.024 104.492 372.315 89.2297 372.315C79.0858 372.315 60.8851 366.531 60.8851 345.108"
+                              fill="#096AA0" />
+                          </g>
+                          <g id="d">
+                            <path id="path28"
+                              d="M153.689 330.13C144.684 330.13 139.374 336.387 139.374 344.918C139.374 353.165 144.968 359.612 153.689 359.612C162.506 359.612 168.004 354.018 168.004 344.918C168.004 336.293 162.506 330.13 153.689 330.13ZM167.435 365.774C165.254 368.712 158.997 372.125 151.604 372.125C135.109 372.125 125.44 359.896 125.44 344.918C125.44 329.94 135.109 317.712 151.604 317.712C159.188 317.712 164.78 320.746 167.435 324.253V299.321H181.464V370.988H167.435V365.774Z"
+                              fill="#096AA0" />
+                          </g>
+                          <g id="u">
+                            <path id="path32"
+                              d="M195.399 349.848V319.039H209.713V349.848C209.713 357.81 214.453 360.275 219.856 360.275C223.837 360.275 230.189 357.906 229.81 346.625V319.039H244.029V370.988H229.81V366.531C226.397 370.039 221.372 372.125 215.875 372.125C200.896 372.125 195.399 363.31 195.399 349.848Z"
+                              fill="#096AA0" />
+                          </g>
+                          <path id="l" d="M257.962 299.321H272.182V370.988H257.962V299.321Z" fill="#096AA0" />
+                          <g id="y">
+                            <path id="path38"
+                              d="M291.899 390.515L300.905 369.092L278.533 319.039H294.933L308.11 352.217L320.243 319.039H336.642L307.541 390.515H291.899Z"
+                              fill="#096AA0" />
+                          </g>
+                          <g id="t">
+                            <path id="path42"
+                              d="M362.71 352.407C362.71 355.252 362.805 360.181 369.155 360.181C370.768 360.181 371.905 360.085 372.758 359.991V371.935C371.052 372.125 368.397 372.314 366.407 372.314C355.411 372.314 348.679 370.324 348.679 359.328V330.414H342.328V317.997H348.679V304.061H362.71V317.997H373.137V330.414H362.71V352.407Z"
+                              fill="#096AA0" />
+                          </g>
+                        </g>
+                        <g id="X">
+                          <path id="path46"
+                            d="M387.544 301.785H406.407L424.324 325.675L442.241 301.785H460.916L433.71 336.671L460.442 370.988H441.672L424.324 347.952L406.977 370.988H388.113L414.94 336.671L387.544 301.785Z"
+                            fill="#00B6B4" />
+                        </g>
+                      </g>
+                      <g id="Logo">
+                        <g id="Book">
+                          <g id="MainBookBackground">
+                            <path id="path50"
+                              d="M305.574 101.599H206.386C199.618 101.599 194.08 107.136 194.08 113.905V211.097C194.08 214.153 195.212 216.956 197.075 219.114H196.223L197.966 220.045C199.539 221.526 201.497 222.601 203.671 223.095L262.411 254.487V223.403H305.574C312.342 223.403 317.881 217.866 317.881 211.097V113.905C317.881 107.136 312.342 101.599 305.574 101.599Z"
+                              fill="#242960" />
+                          </g>
+                          <g id="Page">
+                            <path id="path54"
+                              d="M223.289 111.125H299.659C299.659 111.125 312.788 109.785 312.788 125.327C312.788 140.869 312.63 206.047 312.63 206.047C312.63 206.047 311.717 214.827 305.285 217.775C305.285 217.775 305.822 214.56 305.822 210.273V142.744C305.822 142.744 308.234 125.327 287.867 125.327H224.092C224.092 125.327 212.838 126.131 212.838 118.896C212.838 111.66 223.289 111.125 223.289 111.125Z"
+                              fill="white" />
+                          </g>
+                          <g id="PageShadow">
+                            <path id="path58"
+                              d="M213.882 115.47L296.442 115.412C296.442 115.412 310.109 114.341 310.109 132.295V213.518C310.109 213.518 312.788 210.779 312.788 203.812V121.039C312.788 121.039 313.057 111.125 299.66 111.125H223.288C223.288 111.125 216.536 111.419 213.882 115.47Z"
+                              fill="#B0AEB0" />
+                          </g>
+                        </g>
+                        <g id="FingerTap">
+                          <g id="TapCircles">
+                            <g id="g60">
+                              <path id="path62"
+                                d="M231.826 153.123C231.898 148.308 233.539 143.776 236.929 139.926C239.828 136.637 243.444 134.532 247.733 133.596C249.782 133.149 251.851 133.035 253.931 133.253C256.944 133.571 259.761 134.502 262.328 136.116C267.207 139.18 270.247 143.559 271.508 149.169C271.995 151.339 272.073 153.541 271.819 155.748C271.469 158.782 270.478 161.601 268.868 164.198C268.495 164.798 267.744 164.98 267.157 164.622C266.565 164.262 266.367 163.525 266.731 162.915C267.358 161.863 267.914 160.781 268.337 159.63C268.94 157.999 269.303 156.316 269.41 154.578C269.651 150.689 268.759 147.078 266.652 143.803C263.954 139.609 260.142 136.97 255.251 135.986C247.537 134.433 239.686 138.35 236.209 145.418C235.187 147.496 234.541 149.679 234.399 151.99C234.02 158.13 236.171 163.215 240.858 167.202C241.546 167.786 242.334 168.254 243.083 168.765C243.443 169.012 243.66 169.331 243.68 169.773C243.703 170.267 243.503 170.653 243.084 170.903C242.666 171.155 242.224 171.155 241.802 170.907C240.466 170.122 239.232 169.198 238.115 168.122C235.203 165.319 233.29 161.943 232.36 158.011C232.004 156.503 231.843 154.971 231.826 153.123Z"
+                                fill="#00B6B4" />
+                            </g>
+                            <g id="g64">
+                              <path id="path66"
+                                d="M251.794 143.261C247.751 143.436 244.555 145.245 242.557 148.871C240.522 152.563 240.624 156.325 242.689 160.006C243.13 160.794 242.878 161.484 242.4 161.816C241.79 162.24 240.992 162.058 240.596 161.398C239.827 160.117 239.275 158.747 238.955 157.286C237.783 151.925 239.821 146.5 244.25 143.26C246.093 141.913 248.166 141.132 250.439 140.872C256.992 140.119 263.049 144.425 264.699 150.824C265.53 154.04 265.234 157.16 263.841 160.175C263.418 161.091 262.221 161.217 261.667 160.407C261.39 160.001 261.375 159.566 261.578 159.126C262.012 158.191 262.343 157.221 262.492 156.201C263.08 152.173 261.928 148.736 258.922 145.971C257.324 144.504 255.406 143.663 253.256 143.371C252.804 143.31 252.344 143.302 251.794 143.261Z"
+                                fill="#00B6B4" />
+                            </g>
+                          </g>
+                          <g id="Hand">
+                            <path id="path70"
+                              d="M248.306 173.182C248.306 167.124 248.307 161.064 248.304 155.006C248.303 154.052 248.555 153.192 249.207 152.486C249.924 151.712 250.841 151.395 251.881 151.403C253.978 151.419 255.391 152.848 255.395 154.986C255.403 158.728 255.398 162.471 255.398 166.213V176.652C255.398 176.736 255.398 176.822 255.398 176.906C255.389 178.204 256.314 178.46 257.197 178.271C257.758 178.151 258.084 177.692 258.085 177.066C258.09 175.386 258.073 173.706 258.093 172.025C258.108 170.881 258.519 169.903 259.465 169.207C261.12 167.992 263.657 168.453 264.681 170.146C265.065 170.782 265.2 171.481 265.2 172.214C265.2 174.565 265.199 176.916 265.203 179.266C265.203 179.486 265.216 179.71 265.266 179.921C265.374 180.381 265.693 180.646 266.145 180.733C266.358 180.773 266.585 180.771 266.801 180.746C267.46 180.675 267.857 180.247 267.866 179.574C267.879 178.388 267.869 177.2 267.875 176.011C267.879 175.35 267.873 174.687 267.919 174.028C268.029 172.456 269.363 171.152 270.933 171.01C271.888 170.923 272.78 171.071 273.569 171.629C274.571 172.336 274.98 173.361 274.987 174.55C275 176.95 274.991 179.353 274.992 181.755C274.992 181.908 274.984 182.063 275.012 182.212C275.118 182.792 275.459 183.123 276.05 183.192C276.282 183.219 276.527 183.214 276.756 183.174C277.248 183.084 277.615 182.695 277.636 182.186C277.674 181.305 277.671 180.422 277.674 179.541C277.676 179.019 277.731 178.51 277.929 178.022C278.458 176.725 279.448 176.048 280.819 175.906C281.905 175.793 282.893 176.054 283.709 176.808C284.404 177.453 284.754 178.282 284.762 179.211C284.785 182.097 284.798 184.983 284.757 187.867C284.725 190.142 284.482 192.405 284.017 194.631C283.488 197.154 282.873 199.66 282.312 202.177C281.736 204.761 281.131 207.339 280.63 209.936C280.323 211.53 280.182 213.156 279.983 214.769C279.924 215.247 279.913 215.734 279.882 216.214C279.842 216.816 279.371 217.255 278.749 217.255C276.535 217.258 274.319 217.257 272.105 217.257H254.181C253.432 217.257 253.034 216.887 252.937 216.137C252.71 214.357 252.041 212.745 251.047 211.258C250.281 210.112 249.399 209.06 248.465 208.052C247.164 206.648 246.049 205.099 244.918 203.566C243.337 201.42 242.011 199.111 240.681 196.808C238.534 193.088 236.534 189.29 234.839 185.342C234.375 184.264 233.98 183.152 233.644 182.03C233.472 181.458 233.478 180.825 233.44 180.219C233.377 179.198 234.126 178.457 235.207 178.345C236.274 178.234 237.2 178.515 238.065 179.143C239.551 180.221 240.788 181.539 241.906 182.978C243.379 184.875 244.586 186.928 245.471 189.165C245.556 189.379 245.599 189.62 245.607 189.852C245.625 190.462 245.609 191.074 245.615 191.685C245.619 192.2 245.769 192.657 246.276 192.877C246.811 193.107 247.353 193.095 247.847 192.748C248.181 192.515 248.271 192.151 248.302 191.769C248.31 191.659 248.306 191.548 248.306 191.438V173.182Z"
+                              fill="white" />
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <p class="dark-colored-text font-weight-medium text-justify col-8">
+            edulytX is an online learning platform catering to needs of learners. We partner with the best educational
+            institutions to provide for effective and rich learning experience. To have your own instance of edulytX,
+            click here.
+          </p>
+        </div>
+        <div class="row w-100">
+          <div class="col-12 col-sm-6 store-badge store-badge-apple">
+            <img src="images/app-store.svg">
+          </div>
+          <div class="col-12 col-sm-6 store-badge">
+            <img src="images/google-play-badge.png">
+          </div>
+        </div>
+        <p class="copyright">
+          © edulytX. All rights reserved except where noted. edX, Open edX and their respective logos are registered
+          trademarks of edX Inc.
+        </p>
+      </div>
+
+      <div class="subscreen py-5" id="subscreen-footer-2">
+        <div class="container pb-5 pb-md-0">
+          <div class="container footer-nav pt-5 mt-5 pt-md-0 mt-md-0">
+            <div class="footer-sub-nav">
+              <h4 class="white-text font-weight-semi-bold p5">edulytX</h4>
+              <ul class="pb-5 pb-md-0">
+                <li>Home</li>
+                <li>About</li>
+                <li>For Governments</li>
+                <li>For Enterprises</li>
+                <li>For Education</li>
+              </ul>
+            </div>
+            <div class="footer-sub-nav">
+              <h4 class="white-text font-weight-semi-bold p5">Community</h4>
+              <ul class="pb-5 pb-md-0">
+                <li>Learners</li>
+                <li>Educators</li>
+                <li>Partners</li>
+                <li>Blogs</li>
+                <li>PaaS</li>
+              </ul>
+            </div>
+            <div class="footer-sub-nav">
+              <h4 class="white-text font-weight-semi-bold p5">More</h4>
+              <ul class="pb-5 pb-md-0">
+                <li>Help</li>
+                <li>Affiliates</li>
+                <li>Privay Policy</li>
+                <li>Contact</li>
+                <li>Terms of Service</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-footer">
+            <ul class="footer-nav-icons">
+              <li id="github"></li>
+              <li id="twitter"></li>
+              <li id="facebook"></li>
+              <li id="linkedin"></li>
+            </ul>
+            <div class="openedx">
+              <img src="images/edx-openedx-logo-tag.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="parallax.min.js"></script>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
